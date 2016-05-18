@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0">
+    <title>当前位置</title>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8WdGXfreH4WG9lwDQWUrilE5"></script><!-- 框架地址 不精确 -->
+    <script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script><!-- 转换地址 更精确  -->
+    <style type="text/css">
+        #map{
+            text-align: center;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="map">等待获取地图数据...</div>
+    <script type="text/javascript">
+        var map=document.getElementById("map");
+        var height=window.screen.availHeight;
+        map.style.height=height+"px";
+        window.onload=function(){
+            //执行调用地图函数
+            getLocal();
+        }
+        function getLocal(){
+            //调用浏览器中地理位置API
+            navigator.geolocation.getCurrentPosition(successCallback,errorCallback);
+        }
+        function successCallback(d) {
+            map.innerHTML = "地理位置获取成功";
+            //根据回调函数返回的坐标对象，获取经纬度
+            var lon = d.coords.longitude;
+            var lat = d.coords.latitude;
+            setTimeout(function(){
+                var point=new BMap.Point(lon,lat);
+                BMap.Convertor.translate(point,0,initMap);
+            },1000)
+        }
+        function initMap(point){
+            var map=new BMap.Map("map");
+            map.addControl(new BMap.NavigationControl());
+            map.addControl(new BMap.ScaleControl());
+            map.addControl(new BMap.OverviewMapControl());
+            map.centerAndZoom(point, 15);//point为坐标点，15为地图缩放级别，最大级别是 18
+            var icon = new BMap.Icon('images/map_pot.png', new BMap.Size(32, 40), {
+                anchor: new BMap.Size(10, 30)
+            });
+            var pointMarker = new BMap.Marker(point,{
+                icon:icon
+            });
+            map.addOverlay(pointMarker);
+        }
+        function errorCallback(d){
+            map.innerHTML = d.code;
+        }
+    </script>
+</body>
+</html>

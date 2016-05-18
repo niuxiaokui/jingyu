@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<title>惊鱼-音乐</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/audio.css">
+	<link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+<!-- 网站导航 -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand" style="padding:0;">
+					<img src="images/logo.png" alt="鱼跃" style="padding:0;margin:0;height:50px;width:90px;">
+				</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+					<li><a href="news.html"><span class="glyphicon glyphicon-list"></span> 资讯</a></li>
+					<li><a href="picture.html"><span class="glyphicon glyphicon-picture"></span> 图片</a></li>
+					<li class="active"><a href="audio.html"><span class="glyphicon glyphicon-music"></span> 音乐</a></li>
+					<li><a href="video.html"><span class="glyphicon glyphicon-film"></span> 视频</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right login" style="margin-top:0">
+				<!-- 登录前 -->
+					<li><a class="btn btn-default" data-toggle="modal" href="#login" type="button"><strong>登录</strong></a></li>
+					<li><a class="btn btn-default" data-toggle="modal" href="#register" type="button"><strong>注册</strong></a></li>
+				</ul> 
+			</div>
+		</div>
+	</nav>
+<div class="container">
+<!-- 坐标天气 -->
+	<div class="row cityWeather">
+		<div class="map col-lg-2 col-md-2 col-sm-2 col-xs-4">
+			<div class="city"></div>
+			<div><a href="map.html">定位</a></div>
+		</div>
+		<div class="weather col-lg-4 col-md-4 col-sm-4 col-xs-8">
+			<div class="war_a"></div>
+			<div class="war_b"></div>
+			<div class="war_c"></div>
+			<div class="war_d"></div>
+		</div>
+		<div class="search col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			<input type="text" class="searchBar col-lg-10 col-md-10 col-sm-10 col-xs-10" placeholder="音乐">
+			<button class="btn btn-primary col-lg-2 col-md-2 col-sm-2 col-xs-2">搜索</button>
+		</div>
+	</div>
+	<div class="row">
+		<ul id="myTab" class="nav nav-tabs">
+			<li class="col-lg-1 col-md-1 col-sm-2 col-xs-3 active"><a href="#T1" data-toggle="tab">推荐</a></li>
+			<li class="col-lg-1 col-md-1 col-sm-2 col-xs-3"><a href="#T2" data-toggle="tab">新歌</a></li>
+			<li class="col-lg-1 col-md-1 col-sm-2 col-xs-3"><a href="#T3" data-toggle="tab">热歌</a></li>
+			<li class="col-lg-1 col-md-1 col-sm-2 col-xs-3"><a href="#T4" data-toggle="tab">老歌</a></li>
+			<li class="col-lg-1 col-md-1 col-sm-2 col-xs-3"><a href="#T5" data-toggle="tab">情歌</a></li>
+			<li class="col-lg-1 col-md-1 col-sm-2 col-xs-3"><a href="#T6" data-toggle="tab">华语</a></li>
+			<li class="col-lg-1 col-md-1 col-sm-2 col-xs-3"><a href="#T7" data-toggle="tab">网络</a></li>
+			<li class="col-lg-1 col-md-1 col-sm-2 col-xs-3"><a href="#T8" data-toggle="tab">摇滚</a></li>
+			<li class="col-lg-1 col-md-1 col-sm-2 col-xs-3"><a href="#T9" data-toggle="tab">影视</a></li>
+			<li class="col-lg-1 col-md-1 col-sm-2 col-xs-3"><a href="#T10" data-toggle="tab">欧美</a></li>
+			<li class="col-lg-1 col-md-1 col-sm-2 col-xs-3"><a href="#T11" data-toggle="tab">爵士</a></li>
+			<li class="col-lg-1 col-md-1 col-sm-2 col-xs-3"><a href="#T12" data-toggle="tab">Billboard</a></li>
+		</ul>
+	</div>
+	<div>
+		<div class="tab-content">
+			<div class="tab-pane" id="T0"></div>
+			<div class="tab-pane in active" id="T1">
+				<!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 music clear">
+					<div class="left">1</div><div>歌名</div>
+					<div class="right glyphicon glyphicon-plus">添加</div>
+					<div class="right glyphicon glyphicon-triangle-right">播放</div>
+					<div class="right">歌手</div>
+					<div class="id">id</div>
+				</div> -->
+			</div>
+			<div class="tab-pane" id="T2"></div>
+			<div class="tab-pane" id="T3"></div>
+			<div class="tab-pane" id="T4"></div>
+			<div class="tab-pane" id="T5"></div>
+			<div class="tab-pane" id="T6"></div>
+			<div class="tab-pane" id="T7"></div>
+			<div class="tab-pane" id="T8"></div>
+			<div class="tab-pane" id="T9"></div>
+			<div class="tab-pane" id="T10"></div>
+			<div class="tab-pane" id="T11"></div>
+			<div class="tab-pane" id="T12"></div>
+		</div>
+	</div>
+</div>
+<!-- 隐藏音乐播放器 -->
+	<audio id="audio" controls src="" loop autoplay></audio>
+
+<!-- 登录框 -->
+	<div class="modal" id="login" tabindex="-1">
+	    <div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+					<h3 class="modal-title"><strong>登&nbsp;录</strong></h3>
+				</div>
+				<div class="modal-body">
+					<form id="l_form" action="login.php">
+						<div class="form-group">
+							<label for="l_username" class="control-lable">用户名</label>
+							<input id="l_username" type="text" class="form-control" name="l_username" placeholder="请输入用户名">
+							<div style="color:red;"></div>
+						</div>
+						<div class="form-group">
+							<label for="l_password" class="control-lable">密码</label>
+							<input id="l_password" type="password" class="form-control" name="l_password" placeholder="请输入密码">
+							<div style="color:red;"></div>
+						</div>
+						<div style="text-align:center">
+							<lable class="checkbox-inline">
+								<input id="checkbox" type="checkbox">是否记住密码
+							</lable >
+						</div>
+						<input type="submit" class="btn btn-primary center" style="width:100%" value="登录">
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" id="toRegister">去注册</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 注册框 -->
+	<div class="modal" id="register" tabindex="-1">
+	    <div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+					<h3 class="modal-title"><strong>注&nbsp;册</strong></h3>
+				</div>
+				<div class="modal-body">
+					<form id="r_form" method="get" action="register.php">
+						<div class="form-group">
+							<label for="r_username" class="control-lable">用户名</label>
+							<input id="r_username" type="text" class="form-control" name="r_username" placeholder="请输入长度为6-12位的用户名">
+							<div class="r_name"></div>
+						</div>
+						<div class="form-group">
+							<label for="r_password" class="control-lable">密码</label>
+							<input id="r_password" type="password" class="form-control" name="r_password" placeholder="请输入长度为8-20位的密码">
+							<div style="color:red;"></div>
+						</div>
+						<div class="form-group">
+							<label for="email" class="control-lable">邮箱</label>
+							<input id="email" type="text" class="form-control"  name="email" placeholder="请输入邮箱地址">
+							<div style="color:red;"></div>
+						</div>
+						<input type="submit" class="btn btn-primary center" style="width:100%" value="注册">
+					</form>	
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" id="toLogin">去登录</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 注册失败提示框 -->
+	<div class="modal" id="registerFailed" tabindex="-1">
+	    <div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+					<h3 class="modal-title"><strong>注&nbsp;册&nbsp;失&nbsp;败</strong></h3>
+				</div>
+				<div class="modal-body">
+					<h4>请您重新注册</h4>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 注册成功提示框 -->
+	<div class="modal" id="registerSuccess" tabindex="-1">
+	    <div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+					<h3 class="modal-title"><strong>注~册~成~功~</strong></h3>
+				</div>
+				<div class="modal-body">
+					<span>现在去</span>
+					<button type="button" class="btn btn-primary" id="registerLogin">登录</button>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 登录失败提示框 -->
+	<div class="modal" id="loginFailed" tabindex="-1">
+	    <div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+					<h3 class="modal-title"><strong>登&nbsp;录&nbsp;失&nbsp;败</strong></h3>
+				</div>
+				<div class="modal-body">
+					<h4>请您重新登录！</h4>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 登录成功提示框 -->
+	<div class="modal" id="loginSuccess" tabindex="-1">
+	    <div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+					<h3 class="modal-title"><strong>登~录~成~功~</strong></h3>
+				</div>
+				<div class="modal-body">
+					<div id="welcome"></div>
+					<div>欢迎您来到惊鱼~</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+<!-- 未登录提示框 -->
+	<div class="modal" id="nologin" tabindex="-1">
+	    <div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+					<h3 class="modal-title"><strong>添&nbsp;加&nbsp;失&nbsp;败</strong></h3>
+				</div>
+				<div class="modal-body">
+					<h3>您还没有登录！！！</h3>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary toLogin">去登陆</button>
+					<button type="button" class="btn btn-primary toRegister">去注册</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 添加音乐提示 -->
+	<div class="modal" id="alert" tabindex="-1">
+	    <div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title"><strong></strong></h3>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="js/jquery.1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/cityweather.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+#myTab li{
+	text-align: center;
+}
+.hotVideo{
+	color:red;
+	text-align: center;
+	font-size: 30px;
+}
+.video{
+	overflow: hidden;
+	text-align: center;
+}
+.video img{
+	cursor:pointer;
+	float: left;
+	width: 100%;
+	height: auto;
+	-webkit-transition: all .5s ease; /* Safari and Chrome */
+    -moz-transition: all .5s ease; /* Firefox */
+    -ms-transition: all .5s ease; /* IE 9 */
+    -o-transition: all .5s ease; /* Opera */
+    transition: all .5s ease;
+}
+.video span{
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	width: 50%;
+	overflow: hidden;
+}
+.video:hover img {
+	-webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}

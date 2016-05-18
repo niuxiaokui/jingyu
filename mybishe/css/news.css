@@ -1,0 +1,51 @@
+.cityWeather{
+	margin-top: -20px;
+	text-align: center;
+}
+.weather div{
+	float: left;
+}
+.war_a,.war_b,.war_c,.war_d{
+	width: 50%;
+}
+.searchBar{
+	height: 34px;
+}
+@media only screen and (min-width:768px){
+	.search{
+		padding-top: 20px;
+	}
+}
+#myTab>li{
+	padding:0; 
+}
+.tab-pane .row{
+	background-color: white;
+	margin: 10px 0;
+}
+.page .row:hover{
+	box-shadow: 0px 0px 1px 1px rgba(155,211,221,0.8), 
+				0px 0px 2px 2px rgba(155,211,221,0.5), 
+				0px 0px 3px 3px rgba(155,211,221,0.2);
+}
+.row>span,h4>a{
+	color: black;
+}
+.nav-pills>li+li{
+	margin-left: 0!important;
+}
+.tab-pane a.photograph{
+	margin-left: -1rem;
+}
+.photograph img{
+	width: 100%;
+	margin: 0 auto;
+	max-height: 200px;
+}
+.source{
+	opacity: 0.7;
+	margin-right: 10px;
+}
+.xiayiye{
+	width: 100%;
+}

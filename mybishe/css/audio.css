@@ -1,0 +1,33 @@
+#myTab{
+	text-align: center;
+}
+.left{
+	text-align: center;
+	float: left;
+	width: 33px;
+	overflow: hidden;
+	margin-right: 10px;
+}
+.right1,.right2,.right3{
+	float: right;
+	margin-right: 10px;
+}
+.right2,.right3{
+	cursor: pointer;
+}
+.title{
+	float: left;
+}
+.right1,.title{
+	max-width: 32%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.music{
+	margin-top: 5px; 
+	height: 30px;
+}
+#audio{
+	display: none;
+}

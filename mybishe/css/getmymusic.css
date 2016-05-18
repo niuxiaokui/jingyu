@@ -1,0 +1,210 @@
+.top{
+	margin: 0 auto; 
+	margin-top: -10px;
+	text-align: center;
+}
+.xinxi .glyphicon{
+	float: left;
+	margin-left: 40%;
+	font-size: 30px;
+	line-height: 50px;
+}
+.page_2{
+	height: 300px;
+}
+#canvas{
+	background-color: black;
+}
+.xinxi{
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+}
+.song_name,.song_singer{
+	font-size: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	width: 50%;
+	float: left;
+	color: blue;
+}
+.song_name,.song_singer{
+	
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.xinxi div{
+	float: left;
+}
+.playpause{
+	width: 10%;
+	margin: 0 2%;
+}
+.playprogress{
+	height: 24px;
+	width: 85%;
+	margin-top: 13px;
+	position: relative;
+	background-color: #000;
+	opacity: 0.6
+}
+.muted,.previous,.next{
+	width: 10%;
+	margin: 0 5%;
+	height: 50px;
+}	
+.volume{
+	position: relative;
+	width: 39%;
+	margin-top: 20px;
+	height: 10px;
+	background-color: #000;
+	opacity: 0.6
+}
+.delete,.listnum,.playpause,.playprogress,.previous,.zhongli,.next,.muted,.volume,.songlist,.visualization_1,.visualization_2,.lyric{
+	cursor: pointer;
+}
+.currentTime,.progresscolor,.duration{
+	line-height: 24px;
+	height: 24px;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+}
+.currentTime{
+	left: 2px;
+}
+.duration{
+	right: 2px;
+}
+.progresscolor{
+	left: 0;
+	width: 0;
+	background: #3ec3d5;
+}
+.volumecolor{
+	position: absolute;
+	left: 0;
+	background: #3ec3d5;
+	width: 50%;
+	height: 10px;
+}
+.songlist,.visualization_1,.visualization_2,.lyric{
+	width: 25%;
+	font-size: 20px;
+}
+.zhongli{
+	width: 60%;
+	height: 50px;
+	font-size: 20px;
+}
+@media only screen and (max-width:768px){
+	.top{
+		width: 100%;
+	}
+	.top_1{
+		width: 99%;
+		margin: 0 auto;
+	}
+	.songpicture{
+		width: 98%;
+		height: 210px;
+	}
+	.top_2{
+		width: 100%;
+	}
+	.muted .volume{
+		width: 0;
+	}
+	.page_1,.page_2,.page_3{
+		width: 100%;
+	}
+}
+@media only screen and (min-width:769px){
+	.top{
+		width: 80%;
+	}
+	.top_1{
+		width: 25%;
+		float: left;
+	}
+	.songpicture{
+		width: 98%;
+		height: 210px;
+	}
+	.top_2{
+		width: 75%;
+		float: left;	
+	}
+	.page_1,.page_2,.page_3{
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+.list{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid white;
+	width: 100%;
+	background-color: #3ec3d5;
+}
+.playing{
+	height: 40px;
+	float: left;
+	width: 10%;
+}
+.playing .glyphicon-music{
+	opacity: 0;
+	-webkit-animation: myfirst 1s linear 1s infinite alternate;
+	-moz-animation: myfirst 1s linear 1s infinite alternate;
+	-o-animation: myfirst 1s linear 1s infinite alternate;
+	animation: myfirst 1s linear 1s infinite alternate;
+}
+@-webkit-keyframes myfirst{
+	0%   {opacity: 0}
+	100% {opacity: 1}
+}
+@-moz-keyframes myfirst{
+	0%   {opacity: 0}
+	100% {opacity: 1}
+}
+@-o-keyframes myfirst{
+	0%   {opacity: 0}
+	100% {opacity: 1}
+}
+@keyframes myfirst{
+	0%   {opacity: 0}
+	100% {opacity: 1}
+}
+.listnum{
+	float: left;
+	width: 70%;
+}
+.name{
+	white-space: nowrap;
+	max-width: 50%;
+	float: left;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.singer{
+	white-space: nowrap;
+	max-width: 50%;
+	float: right;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.delete{
+	float: right;
+	width: 20%;
+}
+.page_3{
+	text-align: center;
+}
+.footer{
+	margin-top: 10px;
+}
